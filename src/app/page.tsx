@@ -13,7 +13,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`https:cdrickandmortyapi.com/api/character?page=${page}`);
+      const res = await fetch(`https://rickandmortyapi.com/api/character?page=${page}`);
       const data = await res.json();
       setCharacters(data.results);
       setFilteredCharacters(data.results);
